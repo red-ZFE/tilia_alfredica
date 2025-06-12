@@ -10,11 +10,21 @@ Hier sind alle wichtigen Publikationen gelistet. Insbesondere diejenigen, die al
 
 ### Peer-Review Publikationen
 
-<div style="position:relative;padding-bottom:75%;height:0;margin-bottom:20px;">
-  <embed src="articles/grauhaardichte.pdf" type="application/pdf" width="100%" height="600px" />
+<div class="article-card">
+  <div class="pdf-preview">
+    <embed src="articles/blondberg2025.pdf" type="application/pdf" width="100%" height="400px" />
+  </div>
+
+  <div class="pdf-download">
+    📄 [PDF herunterladen](articles/blondberg2025.pdf)
+  </div>
+
+  <div class="bibliography">
+    **Bibliographie:**  
+    [@blondberg2025]
+  </div>
 </div>
 
-[📥 PDF herunterladen](articles/grauhaardichte.pdf)
+---
 
-**Bibliographie:** [@blondberg2025]
 ---
