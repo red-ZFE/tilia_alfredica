@@ -1,0 +1,606 @@
+/* ==========================================
+   Tilia Alfredica - Quarto Website Styles
+   ========================================== */
+
+/* CSS Variables - Farbpalette */
+:root {
+    --primary-green: #3A7D44;    /* Baumgrün - Hauptakzente, Buttons, Icons */
+    --accent-green: #7AC142;     /* Blattgrün - Hover-Effekte, Highlights */
+    --data-blue: #3E628D;        /* Tiefblau - Datenpunkte, Navigation */
+    --text-gray: #5A6B7A;        /* Statikgrau - Textelemente, Diagrammachsen */
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --border-light: rgba(58, 125, 68, 0.1);
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: var(--text-gray);
+    background-color: var(--white);
+}
+
+/* Quarto-compatible Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+
+h2 { 
+    font-size: 2rem; 
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 0.5rem;
+}
+
+h3 { 
+    font-size: 1.5rem; 
+    margin: 1.5rem 0 0.75rem; 
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--data-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-green);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   Navigation Styles
+   ========================================== */
+
+.navbar {
+    background: var(--primary-green);
+    border-bottom: 5px solid var(--border-light);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+  display: flex;
+  max-height: 110px;
+  max-width: auto;
+}
+
+.navbar-brand-logo {
+  display: flex;
+  max-height: 100%;
+  max-width: auto;
+}
+
+.navbar-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.brand-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: var(--accent-green);
+    background-color: var(--border-light);
+}
+
+.navbar-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ==========================================
+   Hero Section
+   ========================================== */
+
+.hero-section {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--white) 0%, rgba(122, 193, 66, 0.05) 100%);
+    margin: 2rem 0 3rem;
+    border-radius: 12px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   Res Novae Section
+   ========================================== */
+
+.news-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.news-item {
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.news-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    border-color: var(--accent-green);
+}
+
+.news-date {
+    color: var(--data-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.news-title {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.news-excerpt {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.news-link {
+    color: var(--data-blue);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.news-link:hover {
+    color: var(--accent-green);
+    border-bottom-color: var(--accent-green);
+}
+
+/* ==========================================
+   Publications Section
+   ========================================== */
+
+.publication-item {
+    background: var(--white);
+    border-left: 4px solid var(--accent-green);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    box-shadow: 0 4px 15px var(--shadow-medium);
+    transform: translateX(2px);
+}
+
+.pub-title {
+    color: var(--primary-green);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    color: var(--text-gray);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.pub-journal {
+    color: var(--data-blue);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.pub-year {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pub-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    color: var(--data-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--data-blue);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.pub-link:hover {
+    background: var(--data-blue);
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* ==========================================
+   About Section
+   ========================================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.about-sidebar {
+    background: linear-gradient(135deg, var(--light-bg) 0%, rgba(122, 193, 66, 0.05) 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-title {
+    color: var(--primary-green);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-info {
+    list-style: none;
+}
+
+.contact-info li {
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+}
+
+.contact-info a {
+    color: var(--data-blue);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--accent-green);
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    border-color: var(--accent-green);
+    transform: translateX(2px);
+}
+
+/* ==========================================
+   Utility Classes
+   ========================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+.my-2 { margin: 2rem 0; }
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(58, 125, 68, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(58, 125, 68, 0.4);
+    color: white;
+}
+
+/* ==========================================
+   Quarto Compatibility
+   ========================================== */
+
+/* Code blocks */
+pre, code {
+    background: var(--light-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9em;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+th, td {
+    border: 1px solid var(--border-light);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background: var(--light-bg);
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: rgba(122, 193, 66, 0.05);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--accent-green);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-gray);
+    background: rgba(122, 193, 66, 0.05);
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+
+.footer {
+    background: var(--light-bg);
+    border-top: 1px solid var(--border-light);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-sidebar {
+        order: -1;
+    }
+    
+    .pub-links {
+        justify-content: flex-start;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 2rem 1rem;
+        margin: 1rem 0 2rem;
+    }
+    
+    .news-item,
+    .publication-item {
+        padding: 1rem;
+    }
+    
+    .about-sidebar {
+        padding: 1.5rem;
+    }
+}
+
+.type-overlay {
+  padding-left: 30px;
+}
+
+
+
+.article-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  background-color: #fdfdfd;
+}
+
+.pdf-preview {
+  margin-bottom: 15px;
+}
+
+.pdf-download {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bibliography {
+  font-style: italic;
+  color: #555;
+}
