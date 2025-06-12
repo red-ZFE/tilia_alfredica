@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  
+bibliography: literatur.bib
+csl: apa.csl
+
+resources:
+  - articles/*.pdf
 
 website:
   favicon: "images/tilia_alfredica.ico"
