@@ -2,24 +2,87 @@
 title: "res gestae"
 ---
 
-Hier sind alle wichtigen Publikationen gelistet. Insbesondere diejenigen, die als Beiträge zur kummulativen Habilitation eingereicht werden.
+
+<style>
+.literature-entry {
+  text-indent: -2.2em;
+  margin-left: 2.2em
+}
+</style>
+
+Hier sind alle wichtigen Publikationen gelistet, die ein eindrucksvoll breites Feld abdecken und von höchster Kompetenz zeugen.
+
+###  Peer-Review Publikationen
+<div class="literature-entry">
+Blondberg, M., Färbinger, M., Glatzmann, P., Naturhaar, T., Silberlocke, M., & Ungefärbt, L. (2025). Der Zusammenhang zwischen Grauhaardichte und wissenschaftlicher Exzellenz: Eine empirische Untersuchung deutscher Hochschulforscher. <i>Zeitschrift für Hochschulforschung</i>, 15, 1242–1252. 
+</div>
+<p style="padding-left: 2em; padding-bottom: 2em;"><a href="articles/blondberg2025.pdf" download> 📄 PDF herunterladen</a></p>
 
 
-<br><br>
+<div class="literature-entry">
+Good, P., Nique, T., O’Metric, M & <b>Tyrannus, M.</b> (2025). Predictive Validity of Digital Communication Patterns. Email Correspondence as an Indicator of Teaching Quality. <i>Journal of Educational Digital Diagnostic</i>, 89(2), 112–128. 
+</div>
+<p style="padding-left: 2em; padding-bottom: 2em;"><a href="articles/good2025.pdf" download> 📄 PDF herunterladen</a></p>
 
 
-### Peer-Review Publikationen
-
-<!-- <div class="article-card"> -->
-<!--   <div class="pdf-preview"> -->
-<!--     <embed src="articles/blondberg2025.pdf" type="application/pdf" width="100%" height="400px" /> -->
-<!--   </div> -->
-<!--  📄 [PDF herunterladen](articles/blondberg2025.pdf) -->
+<div class="literature-entry">
+Grahm-Atik, P., <b>Tyrannus, M.</b>, Dampf-Inalln-Gassen, H., & Keyn-Ahnung, I. (2024). Kompetenzdefizite in der Bildungsadministration: Warum Schulleiter signifikant schlechter lesen als ihre Schüler. <i>Empirische Pädagogik</i>, 37(4), 142–165. 
+</div>
+<p style="padding-left: 2em; padding-bottom: 2em;"><a href="articles/grahm2024.pdf" download> 📄 PDF herunterladen</a></p>
 
 
-<!--   <div class="bibliography"> -->
-<!--     **Bibliographie:**   -->
-<!--     [@blondberg2025] -->
-<!--   </div> -->
-<!-- </div> -->
+<div class="literature-entry">
+Stuemper, U., <b>Tyrannus, M.</b>, & Ringelmann, F. (2023). Das Ringen mit dem Bayerischen Staatsministerium für Unterricht und Kultus (StMUK): Eine Groteske in drei Akten. <i>Journal of Education Policy</i>, 31(4), 445–462.
+</div>
+
+
+
+### Autobiographische Werke
+
+<div class="literature-entry">
+<b>Tyrannus, M.</b> (2022). Ein Nachwuchsgruppentyrann erzählt: Eine selbstkritische Betrachtung hierarchischer Transformationsprozesse in der Nachwuchsgruppenleitung. <i>Deutsche Zeitschrift für Bildungsforschung und Hochschulentwicklung</i>, 28(3), 156–173.
+</div>
+
+
+<div class="literature-entry">
+<b>Tyrannus, M.</b> (2025). My Staff Keep Interrupting: An Evidence-Based Guide for Academic Leadership Positions. <i>Journal of Higher Education Management</i>, 31(3), 542–563.
+</div>
+
+
+### Fallstudien
+
+<div class="literature-entry">
+Hölzel, J., & <b>Tyrannus, M.</b> (2024). Out of the dark, into the light: FALKO-PV als Paradigma erfolgreicher Forschungsgruppengenese. <i>Deutsche Zeitschrift für Bildungsforschung</i>, 35(4), 23–64. 
+</div>
+
+
+<div class="literature-entry">
+Beck, J. (2017). Zu diesen Bildungswissenschaften abgewandert: Der akademische Abstieg des Alfred L. - Eine Fallstudie. <i>Zeitschrift für Wissenschaftsbiographie und Karriereforschung</i>, 23(4), 189–206. 
+</div>
+
+### Medienbeiträge
+
+<div class="literature-entry">
+Kolumna, K. (2021). Vom Faschingsprinz zum König der empirischen Bildungsforschung. In <i>ZMittelbayerische Zeitung</i> (S. 12–13). 
+</div>
+
+
+<div class="literature-entry">
+Kartoffel-Piratensau, A. (2022). Das E-Mail-Orakel: Regensburger Forscher will Unterrichtsqualität aus Lehrerpost vorhersagen. In <i>Der Spiegel, Wissenschaft</i> (15/2022; S. 98–99). 
+</div>
+
+
+<div class="literature-entry">
+König, M. (2024). Kultusministerium vs. Wissenschaft: ’Es war wie Kafka’, sagt Bildungsforscher. In <i>Bayerischer Rundfunk, Kontrovers</i>. 
+</div>
+
+
+<div class="literature-entry">
+Modesto, C. (2024). Schulleiter können nicht lesen - Studie sorgt für Aufruhr im Kultusministerium. In <i>Focus Online, Politik</i>. 
+</div>
+
+
+<div class="literature-entry">
+Krauss, S. (2025). FALKO-PV: Wie eine unbekannte Forschungsgruppe plötzlich berühmt wurde. In <i>Deutschlandfunk, Forschung aktuell</i>. 
+</div>
 
