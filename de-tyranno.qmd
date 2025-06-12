@@ -6,6 +6,9 @@ title: "de tyranno tironum scientia"
 Willkommen bei der Nachwuchsforschungsgruppe – unter der weisen Herrschaft unseres Tyrannus Maximus.
 
 
+![](images/tyrannus_maximus.png){fig-align="center" width="50%"}
+
+
 Tyrannus Maximus, der: Ein majestätischer Herrscher, der mit strenger Hand und liebevollem Blick die Jungforschenden durch das Labyrinth der Wissenschaft führt.
 
 Seine Herrschaftsformen:

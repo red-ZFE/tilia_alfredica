@@ -2,6 +2,7 @@
    Tilia Alfredica - Quarto Website Styles
    ========================================== */
 
+
 /* CSS Variables - Farbpalette */
 :root {
     --primary-green: #3A7D44;    /* Baumgrün - Hauptakzente, Buttons, Icons */
@@ -131,10 +132,28 @@ a:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
-.navbar-nav {
-    display: flex;
-    list-style: none;
+/* Override Bootstrap's navbar behavior completely */
+.navbar-toggler {
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 .nav-link {
     text-decoration: none;
@@ -191,165 +210,6 @@ a:hover {
     line-height: 1.8;
 }
 
-
-/* ==========================================
-   Res Novae Section
-   ========================================== */
-
-.news-grid {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.news-item {
-    background: var(--white);
-    border: 1px solid var(--border-light);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px var(--shadow-light);
-}
-
-.news-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px var(--shadow-medium);
-    border-color: var(--accent-green);
-}
-
-.news-date {
-    color: var(--data-blue);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.news-title {
-    color: var(--primary-green);
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-}
-
-.news-excerpt {
-    color: var(--text-gray);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.news-link {
-    color: var(--data-blue);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    display: inline-block;
-    padding: 0.3rem 0;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.news-link:hover {
-    color: var(--accent-green);
-    border-bottom-color: var(--accent-green);
-}
-
-/* ==========================================
-   Publications Section
-   ========================================== */
-
-.publication-item {
-    background: var(--white);
-    border-left: 4px solid var(--accent-green);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 2px 8px var(--shadow-light);
-    transition: all 0.3s ease;
-}
-
-.publication-item:hover {
-    box-shadow: 0 4px 15px var(--shadow-medium);
-    transform: translateX(2px);
-}
-
-.pub-title {
-    color: var(--primary-green);
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-
-.pub-authors {
-    color: var(--text-gray);
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.pub-journal {
-    color: var(--data-blue);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.pub-year {
-    color: var(--text-gray);
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.pub-links {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.pub-link {
-    color: var(--data-blue);
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 0.3rem 0.8rem;
-    border: 1px solid var(--data-blue);
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.pub-link:hover {
-    background: var(--data-blue);
-    color: white;
-    transform: translateY(-1px);
-}
-
-/* ==========================================
-   About Section
-   ========================================== */
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 3rem;
-    margin-top: 2rem;
-}
-
-.about-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.about-content p {
-    margin-bottom: 1.5rem;
-}
-
-.about-sidebar {
-    background: linear-gradient(135deg, var(--light-bg) 0%, rgba(122, 193, 66, 0.05) 100%);
-    padding: 2rem;
-    border-radius: 12px;
-    height: fit-content;
-    box-shadow: 0 2px 8px var(--shadow-light);
-}
 
 .sidebar-section {
     margin-bottom: 2rem;
@@ -522,65 +382,103 @@ li {
    Responsive Design
    ========================================== */
 
-@media (max-width: 768px) {
-    .navbar-nav {
-        display: none;
-    }
-    
-    .hero-title {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-sidebar {
-        order: -1;
-    }
-    
-    .pub-links {
-        justify-content: flex-start;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    .container {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-section {
-        padding: 2rem 1rem;
-        margin: 1rem 0 2rem;
-    }
-    
-    .news-item,
-    .publication-item {
-        padding: 1rem;
-    }
-    
-    .about-sidebar {
-        padding: 1.5rem;
-    }
-}
-
 .type-overlay {
   padding-left: 30px;
 }
 
+/* Desktop (above 1620px) - Force show navigation, hide toggle */
+@media (min-width: 1621px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+    
+    .navbar-collapse {
+        display: flex !important;
+    }
+    
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
 
+/* Mobile/Tablet (1620px and below) - Force show toggle, handle collapse */
+@media (max-width: 1620px) {
+    .navbar-toggler {
+        display: block !important;
+        margin-right: 30px !important;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 300px;
+        background: var(--primary-green);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 8px var(--shadow-medium);
+        z-index: 1000;
+    }
+    
+    .navbar-collapse:not(.show) {
+        display: none !important;
+    }
+    
+    .navbar-collapse.show {
+        display: block !important;
+    }
+    
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.25rem;
+        border-radius: 4px;
+    }
+    
+    .nav-link:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media (max-width: 974px) {
+    .navbar-logo {
+        display: none !important;
+    }
+    
+    .navbar-title {
+        font-size: 2.5rem;
+        padding-left: 20px;
+    }
+    
+    .motto {
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-title {
+        flex-shrink: 1;
+        font-size: 1.6rem;
+        padding-left: 15px;
+    }
+    
+    .navbar-brand.logo {
+        display: none;
+    }
+    
+    .brand-text {
+        font-size: 2rem;
+    }
+}
 
 .article-card {
   border: 1px solid #ddd;
