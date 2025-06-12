@@ -6,7 +6,7 @@ Hier sind alle wichtigen Publikationen gelistet. Insbesondere diejenigen, die al
 
 
 <br><br>
----
+
 
 ### Peer-Review Publikationen
 
@@ -24,7 +24,5 @@ Hier sind alle wichtigen Publikationen gelistet. Insbesondere diejenigen, die al
     [@blondberg2025]
   </div>
 </div>
-
----
 
 ---
