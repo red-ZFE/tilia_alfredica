@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>de tyranno tironum scientia – TILIA ALFREDICA</title>
+<title>correlationes fallaces – TILIA ALFREDICA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="tilia-alfredica.css">
 </head>
@@ -101,11 +130,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Res Gestae</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./correlationes-fallaces.html"> 
+    <a class="nav-link active" href="./correlationes-fallaces.html" aria-current="page"> 
 <span class="menu-text">Correlationes Fallaces</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./de-tyranno.html" aria-current="page"> 
+    <a class="nav-link" href="./de-tyranno.html"> 
 <span class="menu-text">De Tyranno Tironum Scientia</span></a>
   </li>  
 </ul>
@@ -125,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">de tyranno tironum scientia</h1>
+<h1 class="title">correlationes fallaces</h1>
 </div>
 
 
@@ -142,18 +171,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Willkommen bei der Nachwuchsforschungsgruppe – unter der weisen Herrschaft unseres Tyrannus Maximus.</p>
-<p>Tyrannus Maximus, der: Ein majestätischer Herrscher, der mit strenger Hand und liebevollem Blick die Jungforschenden durch das Labyrinth der Wissenschaft führt.</p>
-<p>Seine Herrschaftsformen:</p>
-<ul>
-<li><p>Deadline-Despot: Keine Präsentation, kein Abstract, kein Artikel verlässt das Büro ohne seinen kritischen Blick.</p></li>
-<li><p>Protokoll-Präsident: Meetings sind seine Bühne und das Protokoll sein Gesetzbuch. Nur wer nachliest, darf weiteratmen.</p></li>
-<li><p>PowerPoint-Pate: Folien ohne Bilder? Unvorstellbar! Genauso wie zu viel Leerraum - Verschwendeter Platz!</p></li>
-</ul>
-<p>Trotz seines beängstigenden Titels, der ihm weit voraus eilt, sorgt unser unnachahmlicher Nachwuchsforschungsgruppentyrann dafür, dass die Forschungsgruppe es zu etwas bringt – denn wer sonst kümmert sich darum, dass aus chaotischen Ideen bald brillante Erkenntnisse erwachsen, damit wir alle berühmt werden?</p>
-<p>Kurzum: Ohne ihn wäre es nur halb so spannend. Oder produktiv. Oder chaotisch.</p>
+<p><br><br></p>
+<section id="betreuungsausfall-und-elterliche-nachtruhe-eine-korrelative-analyse" class="level3">
+<h3 class="anchored" data-anchor-id="betreuungsausfall-und-elterliche-nachtruhe-eine-korrelative-analyse">Betreuungsausfall und elterliche Nachtruhe: Eine korrelative Analyse</h3>
+<p><br><br></p>
+<p><img src="images/kita_stefan.jpeg" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"> <br><br></p>
+<hr>
+<p><br><br></p>
+</section>
+<section id="gerade-ist-es-ungünstig-der-καιρός-in-der-kommunikation-mit-lehrkräften" class="level3">
+<h3 class="anchored" data-anchor-id="gerade-ist-es-ungünstig-der-καιρός-in-der-kommunikation-mit-lehrkräften">“Gerade ist es ungünstig”: Der καιρός in der Kommunikation mit Lehrkräften</h3>
+<p><br><br></p>
+<p><img src="images/Kontaktaufnahme.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"> <br><br></p>
+<hr>
+<p><br><br></p>
+</section>
+<section id="pisa-schock-klappe-die-n-te-für-n-to-infty" class="level3">
+<h3 class="anchored" data-anchor-id="pisa-schock-klappe-die-n-te-für-n-to-infty">PISA-Schock, Klappe die n-te (für <span class="math inline">\(n \to \infty\)</span>)</h3>
+<p><br><br></p>
+<p><img src="images/PISA.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"> <br><br></p>
+<hr>
+<p><br><br></p>
+</section>
+<section id="wechselwirkung-von-administrativer-prozessdauer-und-stimulanzienaufnahme" class="level3">
+<h3 class="anchored" data-anchor-id="wechselwirkung-von-administrativer-prozessdauer-und-stimulanzienaufnahme">Wechselwirkung von administrativer Prozessdauer und Stimulanzienaufnahme</h3>
+<p><br><br></p>
+<p><img src="images/Reisekosten.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"> <br><br></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,0 +1,46 @@
+---
+title: "correlationes fallaces"
+---
+
+<br><br>
+
+### Betreuungsausfall und elterliche Nachtruhe: Eine korrelative Analyse
+
+<br><br>
+
+![](images/kita_stefan.jpeg){fig-align="center" width="100%"}
+<br><br>
+
+---
+
+<br><br>
+
+### "Gerade ist es ungünstig": Der καιρός in der Kommunikation mit Lehrkräften 
+
+<br><br>
+
+![](images/Kontaktaufnahme.png){fig-align="center" width="100%"}
+<br><br>
+
+---
+
+<br><br>
+
+### PISA-Schock, Klappe die n-te (für $n \to \infty$)
+
+<br><br>
+
+![](images/PISA.png){fig-align="center" width="100%"}
+<br><br>
+
+---
+
+<br><br>
+
+### Wechselwirkung von administrativer Prozessdauer und Stimulanzienaufnahme
+
+<br><br>
+
+![](images/Reisekosten.png){fig-align="center" width="100%"}
+<br><br>
+

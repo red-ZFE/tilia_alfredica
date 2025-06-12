@@ -101,6 +101,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Res Gestae</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./correlationes-fallaces.html"> 
+<span class="menu-text">Correlationes Fallaces</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./de-tyranno.html"> 
 <span class="menu-text">De Tyranno Tironum Scientia</span></a>
   </li>  
@@ -117,28 +121,219 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="motto title display-7">
+        Wo <span class="motto-highlight">Bildung</span> in <span class="motto-emphasis">Empirie</span> wurzelt,<br>
+        blüht <span class="motto-highlight">Erkenntnis</span>.
+    </h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">TILIA ALFREDICA</h1>
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+:root {
+    --primary-green: #3A7D44;
+    --accent-green: #5BA366;
+    --data-blue: #2E86AB;
+}
+
+.homepage-hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 6rem auto auto auto;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+body {
+    text-align: center;
+}
+
+.quarto-container {
+    text-align: center;
+}
+
+.motto {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--primary-green);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 4rem 0 0 0;
+}
+
+.motto::before {
+    content: """;
+    position: absolute;
+    left: -1rem;
+    font-size: 4rem;
+    color: var(--accent-green);
+    opacity: 0.7;
+    font-family: serif;
+}
+
+.motto::after {
+    content: """;
+    position: absolute;
+    right: -1rem;
+    font-size: 4rem;
+    color: var(--accent-green);
+    opacity: 0.7;
+    font-family: serif;
+}
+
+.motto-highlight {
+    background: linear-gradient(120deg, var(--accent-green) 0%, var(--primary-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    position: relative;
+}
+
+.motto-emphasis {
+    color: var(--accent-green);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.logo-container {
+    animation: scaleIn 1s ease-out 0.5s both;
+}
+
+.homepage-logo {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(58, 125, 68, 0.2);
+    transition: all 0.5s ease;
+    border: 4px solid rgba(58, 125, 68, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.homepage-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(58, 125, 68, 0.3);
+}
+
+.decorative-line {
+    width: 500px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-green), var(--primary-green));
+    margin:  2rem auto;
+    border-radius: 2px;
+    position: relative;
+    animation: expandLine 1s ease-out 1s both;
+}
+
+.decorative-line::before,
+.decorative-line::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--data-blue);
+    border-radius: 50%;
+    top: -2.5px;
+}
+
+.decorative-line::before {
+    left: -12px;
+}
+
+.decorative-line::after {
+    right: -12px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes expandLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .motto {
+        font-size: 2.2rem;
+        padding: 0 1rem;
+    }
+    
+    .motto::before,
+    .motto::after {
+        font-size: 3rem;
+    }
+    
+    .homepage-logo {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .motto {
+        font-size: 1.8rem;
+        padding: 0 0.5rem;
+    }
+    
+    .motto::before {
+        left: -0.5rem;
+        top: -0.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .motto::after {
+        right: -0.5rem;
+        bottom: -0.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .homepage-logo {
+        width: 220px;
+        height: 220px;
+    }
+}
+</style>
+
+<div class="homepage-hero">
+    
+    
+    <div class="decorative-line"></div>
+    
+    <div class="logo-container">
+        <a href="https://lindl-traunstein.de" target="_blank">
+            <img src="images/tilia_alfredica_circle.png" alt="Tilia Alfredica Logo" class="homepage-logo">
+        </a>
+    </div>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>„Wo Bildung in Empirie wurzelt, blüht Erkenntnis.“</p>
 
 
 
