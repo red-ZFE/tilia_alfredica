@@ -13,7 +13,7 @@ website:
   title: "TILIA ALFREDICA"
   navbar:
     logo: "images/tilia_alfredica_circle.png"
-    logo-href: "https://www.uni-regensburg.de/humanwissenschaften/educational-data-science/personen/falko-pv/alfred-lindl-1/index.html"
+    logo-href: "https://tilia-alfredica.github.io/tilia-alfredica/index.html"
     target: _blank
     right:
       - text: Res Novae
