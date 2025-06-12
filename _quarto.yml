@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  favicon: "images/tilia_alfredica.ico"
+  title: "TILIA ALFREDICA"
+  navbar:
+    logo: "images/tilia_alfredica_circle.png"
+    logo-href: "https://www.uni-regensburg.de/humanwissenschaften/educational-data-science/personen/falko-pv/alfred-lindl-1/index.html"
+    target: _blank
+    right:
+      - text: Res Novae
+        href: res-novae.qmd
+      - text: Publikationen
+        href: publications.qmd
+      - text: De Tyranno Tironum Scientia
+        href: de-tyranno.qmd
+
+
+format:
+  html:
+    allow-html: true
+    lang: de
+    css: tilia-alfredica.css
+
+editor: visual
+

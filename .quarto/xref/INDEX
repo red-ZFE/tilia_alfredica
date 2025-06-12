@@ -1,0 +1,20 @@
+{
+  "about.qmd": {
+    "about.html": "30d99b9a"
+  },
+  "index.qmd": {
+    "index.html": "d1a6aaff"
+  },
+  "news.qmd": {
+    "news.html": "408c3f51"
+  },
+  "publications.qmd": {
+    "publications.html": "3eb2e6df"
+  },
+  "res-novae.qmd": {
+    "res-novae.html": "0fdbb20c"
+  },
+  "de-tyranno.qmd": {
+    "de-tyranno.html": "16e9edc5"
+  }
+}

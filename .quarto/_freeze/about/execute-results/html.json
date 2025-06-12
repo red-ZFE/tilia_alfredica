@@ -1,0 +1,15 @@
+{
+  "hash": "fabb9fb33a2f7a2c3634e04574995f1a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"De tyranno tironum scientia\"\n---\n\n\n\n\nWillkommen bei der Nachwuchsforschungsgruppe – unter der weisen Herrschaft unseres Tyrannen\n\nHier regiert nicht der Diktator, sondern der Nachwuchsforschungsgruppentyrann – ein majestätischer Herrscher, der mit strenger Hand und liebevollem Blick die Jungforschenden durch das Labyrinth der Wissenschaft führt.\n\nSeine Herrschaftsformen:\n\n- Deadline-Despot: Keine Präsentation verlässt das Büro ohne seinen kritischen Blick – und ja, auch der letzte Liter Kaffee muss protokolliert werden.\n\n- Protokoll-Präsident: Meetings sind seine Bühne, und das Protokoll sein Gesetzbuch. Nur wer nachliest, darf weiteratmen.\n\n- PowerPoint-Pate: Folien ohne Bilder? Unvorstellbar! Unser Tyrann kennt jeden Übergangseffekt auswendig – und liebt sie alle.\n\n    Gedankenpolizist: Kritische Fragen sind erwünscht, solange sie sich höflich dem Tyrannen unterordnen.\n\nTrotz seiner ironischen Titulierung sorgt unser Nachwuchsforschungsgruppentyrann dafür, dass die Forschungsgruppe gemeinsam wächst – denn wer sonst sorgt dafür, dass aus chaotischen Ideen bald brillante Erkenntnisse werden?\n\nKurzum: Ohne ihn wäre es nur halb so spannend. Oder produktiv. Oder chaotisch.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
