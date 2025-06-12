@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Res Novae</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publikationen</span></a>
+    <a class="nav-link" href="./res-gestae.qmd"> 
+<span class="menu-text">Res Gestae</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./de-tyranno.html"> 
@@ -138,8 +138,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Falco gratuliert ganz herzlich zur Abgabe der Habilitationsschrift!</p>
-<p>Und FALKO-PV natürlich auch!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/falco.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<button id="btn-low">
+Juhu!
+</button>
+<button id="btn-medium">
+YEAAAHH!!
+</button>
+<button id="btn-high">
+ROCK ME AMADEUS!!!
+</button>
+<style>
+  button {
+    padding: 0.5em 1.2em;
+    margin: 0.3em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid currentColor;
+    border-radius: 8px;
+    background: #3A7D44;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+  }
+  button:hover {
+    background-color: #7AC142;
+    color: white;
+  }
+  button:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+  const btnLow = document.getElementById('btn-low');
+  const btnMedium = document.getElementById('btn-medium');
+  const btnHigh = document.getElementById('btn-high');
+
+  btnLow.addEventListener('click', () => {
+    confetti({
+      particleCount: 100,
+      spread: 100,
+      origin: { y: 0.5 }
+    });
+  });
+
+  btnMedium.addEventListener('click', () => {
+    confetti({
+      particleCount: 500,
+      spread: 150,
+      origin: { y: 0.5 }
+    });
+  });
+
+  btnHigh.addEventListener('click', () => {
+    confetti({
+      particleCount: 3000,
+      spread: 220,
+      origin: { y: 0.5 }
+    });
+  });
+</script>
 
 
 

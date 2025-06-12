@@ -12,8 +12,8 @@ website:
     right:
       - text: Res Novae
         href: res-novae.qmd
-      - text: Publikationen
-        href: publications.qmd
+      - text: Res Gestae
+        href: res-gestae.qmd
       - text: De Tyranno Tironum Scientia
         href: de-tyranno.qmd
 
